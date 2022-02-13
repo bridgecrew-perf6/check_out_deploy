@@ -33,4 +33,4 @@ jobs:
           python-version: 3.8 #install the python needed
     - name: Run deployment script
       # Runs a single command using the runners shell
-      run: python3 main.py
+      run: python3 deploy/main.py
