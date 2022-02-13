@@ -28,11 +28,10 @@ jobs:
         repository:  johanoeh/deploy 
         path: deploy
         ref:  ec8426924658b2b1110318058d4e4578fef6410e
-
-    - name: run script
+    - uses: actions/checkout@v2
     - uses: actions/setup-python@v2
       with:
           python-version: 3.8 #install the python needed
-    - name: knut
+    - name: Run deployment script
       # Runs a single command using the runners shell
       run: python3 deploy/main.py
