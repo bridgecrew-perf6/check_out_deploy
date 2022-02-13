@@ -20,15 +20,14 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/checkout@v2
-      - name: Clone deployment script
-      - uses: actions/checkout@v2
-        with:
-         repository:  johanoeh/deploy 
-         path: deploy
-         ref:  ec8426924658b2b1110318058d4e4578fef6410e
+    - uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v2
+      with:
+        repository: foo-user/bar-repo
+        path: './bar'
+
 #       - name: test
 #       - uses: actions/setup-python@v2
 #         with:
