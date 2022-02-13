@@ -25,8 +25,9 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
       with:
-        repository: foo-user/bar-repo
-        path: './bar'
+        repository:  johanoeh/deploy 
+        path: deploy
+        ref:  ec8426924658b2b1110318058d4e4578fef6410e
 
 #       - name: test
 #       - uses: actions/setup-python@v2
